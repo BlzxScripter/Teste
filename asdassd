@@ -5,7 +5,7 @@
 ]]
 
 return (function(...)
-    local PGAZDIkg = {
+    local NDAYCnYC = {
         "\108\111\099\097\108\032\087\105\110\100",
         "\111\119\032\061\032\080\079\076\065\082",
         "\058\067\114\101\097\116\101\087\105\110",
@@ -853,10 +853,18 @@ return (function(...)
         "\101\110\100\041"
     }
 
-    local function TCTBUgiT()
-        return table.concat(PGAZDIkg)
+    local function hYXKrKVc()
+        return table.concat(NDAYCnYC)
     end
 
-    local oTIOuGty = loadstring(TCTBUgiT())
-    return oTIOuGty(...)
+    local chunk = hYXKrKVc()
+    local hfMkQrTK = loadstring(chunk)
+
+    -- CORREÇÃO CRÍTICA: mantém ambiente global (UI, CreateWindow, libs)
+    local env = (getfenv and getfenv(0)) or _G
+    if setfenv then
+        setfenv(hfMkQrTK, env)
+    end
+
+    return hfMkQrTK(...)
 end)()
